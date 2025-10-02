@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulario de Donación</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="donacion">
+    <h2>Formulario de Donación</h2>
+    <form>
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="monto">Monto a donar</label>
+      <select id="monto" name="monto" required>
+        <option value="">Selecciona un monto</option>
+        <option value="10">$10</option>
+        <option value="25">$25</option>
+        <option value="50">$50</option>
+        <option value="otro">Otro</option>
+      </select>
+
+      <label for="mensaje">Mensaje (opcional)</label>
+      <input type="text" id="mensaje" name="mensaje" />
+
+      <button type="submit">Donar Ahora</button>
+    </form>
+  </div>
+</body>
+</html>
